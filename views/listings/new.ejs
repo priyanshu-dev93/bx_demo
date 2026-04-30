@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new file</title>
+  </head>
+  <body>
+    <div class="col-8 offset-2">
+      <h3>Create New Listings</h3>
+
+      <form method="POST" action="/listings">
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input
+            placeholder="Enter title"
+            name="listing[title]"
+            type="text"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea
+            name="listing[description]"
+            class="form-control"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Image</label>
+          <input
+            placeholder="Enter image URL/link"
+            type="text"
+            name="listing[image]"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input
+            placeholder="1200"
+            type="text"
+            name="listing[price]"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Country</label>
+          <input
+            placeholder="India"
+            type="text"
+            name="listing[country]"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Location</label>
+          <input
+            placeholder="Indore, MP"
+            type="text"
+            name="listing[location]"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <button class="btn btn-dark add-btn">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
